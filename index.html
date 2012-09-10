@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>A.little.code.rocketblast by tkurian</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>A.little.code.rocketblast</h1>
+        <h2></h2>
+        <a href="https://github.com/tkurian/A.Little.Code.RocketBlast" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>RocketBlast</h1>
+
+<h2>High-Level Description</h2>
+
+<p>The idea of this game is to have a rocket which gives the user a view of the inside of the cockpit. This will give the feel that the user is driving the rocket.</p>
+
+<p>We want to have clouds moving towards the rocket, to give a feel that the user is moving forward, unfortunately, we currently have the clouds scrolling downwards! </p>
+
+<p>We also plan on having objects move towards the cockpit, and have the user, shoot these objects to gain points. In the case that the user misses the object, they may face some sort of a consequence. </p>
+
+<p>Currently, we've got the clouds scrolled downwards and an image of a cockpit being displayed. We would like to look at how we can make these clouds move towards the screen, rather than downwards. We would also like to upgrade our image of the cockpit at some point in time. </p>
+
+<p>We have three projects which we auto-generated using libgdx's nightly package. For the time being, we decided to eliminate the browser package. Our three packages are as follows:</p>
+
+<h3>RocketBlast</h3>
+
+<p>This project consists one package. The package is as follows:</p>
+
+<h4>com.rocket.blast</h4>
+
+<p>This package consists of four files. These four files are as follows:</p>
+
+<h5>1. RocketBlast.java</h5>
+
+<p>This file contains all the main work for our game to function. This class will call upon RocketFlux, SkyFlux and AsteroidFlux in order to allow those classes to handle the work related directly to those objects. This allows for us to have a nicely abstracted way of handling our development and organization of the game. </p>
+
+<h5>2. RocketFlux.java</h5>
+
+<p>As mentioned earlier, this file will contain any and all work directly related to the rocket displayed on the screen. For instance, we plan on adding a joystick which will move as the user re-directs the rocket in different directions. This movement of the joystick will be mostly handled within this class. </p>
+
+<h5>3. SkyFlux.java</h5>
+
+<p>SkyFlux currently handles the main sky as well as the scrolling clouds. Perhaps in the future we will add more things to the sky and hence, this class will be required to handle it. </p>
+
+<h5>4. AsteroidFlux.java</h5>
+
+<p>In the future, we plan on adding asteroids which fly towards the rocket. We plan to require these asteroids to be destroyed by the user. The logic of the movement of these asteroids will be handled within this class. </p>
+
+<h3>RocketBlast-android</h3>
+
+<p>This project consists of one package. This package is as follows:</p>
+
+<h4>com.rocket.blast</h4>
+
+<p>This package currently contains one file. This file is as follows:</p>
+
+<h5>1. MainAvtivity.java</h5>
+
+<p>This class will launch our game when it is being deployed to an android device. </p>
+
+<p>Within rocketBlast-android, we also have a folder structure as follows:
+assets&gt;data,images&gt;rocket,sky</p>
+
+<p>Within rocket, we have placed our image of our rocket. Within sky, we have placed our main sky image, as well as our two cloud images. We have experimented a bit, so you will find a few other images in both of these folders. </p>
+
+<h3>RocketBlast-desktop</h3>
+
+<p>This project consists of one package. This package is as follows:</p>
+
+<h4>com.rocket.blast</h4>
+
+<p>This package currently consists of one file. This file is as follows:</p>
+
+<h5>1. Main.java</h5>
+
+<p>This class will launch our game when it is being deployed on a desktop. </p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/tkurian/A.Little.Code.RocketBlast/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/tkurian/A.Little.Code.RocketBlast/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/tkurian/A.Little.Code.RocketBlast"></a> is maintained by <a href="https://github.com/tkurian">tkurian</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
